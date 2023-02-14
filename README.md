@@ -118,17 +118,29 @@ Summary of the T-Test results:
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+The MechaCar's highway fuel efficiency will be greater than other car models of similar horsepower.
 
-In your description, address the following questions:
+#### Hypothesis
+H0 : All car models of similar horsepower will perform the same in highway fuel efficiency.
 
-What metric or metrics are you going to test?
+Ha : At least one car model of similar horsepower's means will stand out from the rest regarding highway fuel efficiency.
 
-What is the null hypothesis or alternative hypothesis?
+#### Test Method
+One-way ANOVA test (analysis of variance)
 
-What statistical test would you use to test the hypothesis? And why?
+ANOVA tests have assumptions about the input data that must be validated prior to using the statistical test:
 
-What data is needed to run the statistical test?
+The dependent variable is numerical and continuous, and the independent variables are categorical.
+The dependent variable is considered to be normally distributed.
+The variance among each group should be very similar.
+
+#### Data Needed
+- Horsepower of the MechaCar and it's competitors.(independent)
+- Highway Fuel Efficiency of the MecharCar and it's competitors.(dependent)
+
+#### Process
+
+Because horsepower is likely going to be numerical instead of catagorical, our first step will be to clean the data and utilize the 'factor()' function. Next, we can run our data through the `aov(formula, data)` function. Finally, we would need to use a `summary()` function to capture our p-values to complete our data.
 
 
 
