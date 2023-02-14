@@ -48,11 +48,11 @@ Producing the following results:
 
 From these results, we can make the following observations:
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-  - Based on the data **ground clearance** and **vehicle length** are statistically likely to produce the most non-random variance to the model.      
+  - Based on the data, **ground clearance** and **vehicle length** are statistically likely to produce the most non-random variance to the model. **Vehicle weight** and **AWD** provided the least non-random amount of varience to the mpg.      
 - Is the slope of the linear model considered to be zero? Why or why not?
-  - The slope   
+  - The slope of the linear model is not zero. The slope coefficients of vehicle length, ground clearance and AWD are sigfnigantly not zero. 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-  - The model 
+  - The model's R-squared variable, the coefficienct of determination, is 0.7149. On a scale of 0 to 1, the score of 0.7149 makes this model and accurate predicter of the MechaCar's mpg.  
 ## Summary Statistics on Suspension Coils
 
 The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
